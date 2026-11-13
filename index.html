@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="vegas">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Mark Chen · 游戏主美 | Game Art Director 作品集</title>
+<meta name="description" content="游戏主美个人作品集：角色设计、场景概念、UI/HUD 图标设计与宣传主视觉的全案视觉能力展示。">
+<meta name="theme-color" content="#1c0743">
+<script>document.documentElement.dataset.theme = localStorage.getItem("cm-theme-v2") || "vegas";</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23150a26'/%3E%3Cpath d='M18 44 L32 16 L46 44' fill='none' stroke='%23ffc93e' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<!-- ======================= 导航 ======================= -->
+<header class="topbar" id="topbar">
+  <div class="container topbar__in">
+    <a class="brand" href="#top" aria-label="返回顶部">
+      <svg viewBox="0 0 64 64" class="brand__mark" aria-hidden="true"><path d="M10 50 L32 10 L54 50" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 50 L32 32 L42 50" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity=".55"/></svg>
+      <span class="brand__name">MARK&nbsp;CHEN<em>游戏主美 · ART DIRECTOR</em></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="主导航">
+      <a href="#works">作品</a>
+      <a href="#skills">能力</a>
+      <a href="#pipeline">管线</a>
+      <a href="#experience">经历</a>
+      <a href="#about">关于</a>
+      <a class="btn btn--ghost" href="#contact">联系我</a>
+    </nav>
+    <div class="topbar__tools">
+      <button class="theme-toggle" id="themeToggle" aria-label="切换配色主题" title="切换配色主题（紫金 / 浅蓝 / 电影感）">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 4a8 8 0 0 1 0 16Z" fill="currentColor"/></svg>
+      </button>
+      <button class="burger" id="burger" aria-label="打开菜单" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ======================= HERO · 动态 Banner ======================= -->
+  <section class="hero">
+    <div class="hero__slides" aria-hidden="true">
+      <div class="slide is-active"><video src="assets/video/hero-summer-1.mp4" poster="assets/video/hero-summer-1.jpg" muted loop playsinline preload="auto" autoplay></video></div>
+      <div class="slide"><video src="assets/video/hero-summer-2.mp4" poster="assets/video/hero-summer-2.jpg" muted loop playsinline preload="metadata"></video></div>
+      <div class="slide"><video src="assets/video/hero-summer-3.mp4" poster="assets/video/hero-summer-3.jpg" muted loop playsinline preload="metadata"></video></div>
+    </div>
+    <div class="hero__shade" aria-hidden="true"></div>
+
+    <div class="container hero__in">
+      <p class="kicker reveal" id="heroKicker">GAME ART DIRECTOR · PORTFOLIO 2026</p>
+      <h1 class="hero__name reveal" data-delay="1">Mark&nbsp;Chen</h1>
+      <p class="hero__tagline reveal" data-delay="2" id="heroTagline">游戏主美 —— 用视觉讲好每一个世界。<br>角色 · 场景 · UI 图标 · 宣传主视觉的全案美术统筹。</p>
+      <div class="hero__cta reveal" data-delay="3">
+        <a class="btn btn--solid btn--xl" href="#works">浏览作品</a>
+        <a class="btn btn--ghost" href="#contact">合作洽谈</a>
+      </div>
+      <ul class="hero__stats reveal" data-delay="4">
+        <li><strong data-count="12">0</strong><span>年行业经验</span></li>
+        <li><strong data-count="24">0</strong><span>参与项目</span></li>
+        <li><strong data-count="9">0</strong><span>上线产品</span></li>
+        <li><strong data-count="6">0</strong><span>年团队管理经验</span></li>
+      </ul>
+    </div>
+
+    <div class="hero__dots" role="tablist" aria-label="Banner 切换">
+      <button class="is-active" aria-label="第 1 屏：夏日冲浪"></button>
+      <button aria-label="第 2 屏：海底世界"></button>
+      <button aria-label="第 3 屏：夏日狂欢派对"></button>
+    </div>
+    <a class="hero__scroll" href="#works" aria-label="向下滚动"><span></span></a>
+  </section>
+
+  <!-- ======================= 跑马灯 ======================= -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker__track">
+      <span>CONCEPT ART</span><i>✦</i><span>CHARACTER DESIGN</span><i>✦</i><span>ENVIRONMENT</span><i>✦</i><span>ICON DESIGN</span><i>✦</i><span>KEY VISUAL</span><i>✦</i><span>ART DIRECTION</span><i>✦</i>
+      <span>CONCEPT ART</span><i>✦</i><span>CHARACTER DESIGN</span><i>✦</i><span>ENVIRONMENT</span><i>✦</i><span>ICON DESIGN</span><i>✦</i><span>KEY VISUAL</span><i>✦</i><span>ART DIRECTION</span><i>✦</i>
+    </div>
+  </div>
+
+  <!-- ======================= 精选作品 ======================= -->
+  <section class="section" id="works">
+    <div class="container">
+      <header class="section__head reveal">
+        <p class="kicker">SELECTED WORKS</p>
+        <h2>精选作品</h2>
+        <p class="section__sub">按分类筛选 —— 点击任意作品查看大图集与项目说明。</p>
+      </header>
+
+      <div class="filters reveal" role="tablist" aria-label="作品筛选">
+        <button class="chip is-active" data-filter="all" role="tab" aria-selected="true">全部 <small>42</small></button>
+        <button class="chip" data-filter="char" role="tab" aria-selected="false">角色设计 <small>1</small></button>
+        <button class="chip" data-filter="ui" role="tab" aria-selected="false">UI·HUD 图标设计 <small>30</small></button>
+        <button class="chip" data-filter="kv" role="tab" aria-selected="false">宣传主视觉 <small>7</small></button>
+        <button class="chip" data-filter="logo" role="tab" aria-selected="false">LOGO 设计 <small>4</small></button>
+      </div>
+
+      <div class="gallery" id="gallery">
+
+        <figure class="card reveal" data-cat="char" data-idx="0">
+          <div class="card__media"><img src="assets/covers/char-royal.jpg" alt="皇家城堡 · 角色设计" loading="lazy"></div>
+          <figcaption class="card__cap"><span class="tag">角色设计</span><h3>皇家城堡 · 角色设计</h3><p>ROYAL CASTLE · CHARACTER DESIGN</p></figcaption>
+        </figure>
+
+        <figure class="card reveal" data-cat="ui" data-idx="1">
+          <div class="card__media"><img src="assets/covers/ui-lobby.jpg" alt="Slots 大厅 · 全面屏界面" loading="lazy"></div>
+          <figcaption class="card__cap"><span class="tag">UI·HUD 图标设计</span><h3>Slots 大厅 · 全面屏界面</h3><p>CASINO LOBBY · FULLSCREEN UI</p></figcaption>
+        </figure>
+
+        <figure class="card reveal" data-cat="ui" data-idx="2">
+          <div class="card__media"><img src="assets/covers/ui-royal.jpg" alt="Royal Family · 收集图鉴" loading="lazy"></div>
+          <figcaption class="card__cap"><span class="tag">UI·HUD 图标设计</span><h3>Royal Family · 收集图鉴</h3><p>ROYAL FAMILY · COLLECTION UI</p></figcaption>
+        </figure>
+
+        <figure class="card reveal" data-cat="ui" data-idx="3">
+          <div class="card__media"><img src="assets/covers/ui-bingo.jpg" alt="Disco Bingo · 加载与主界面" loading="lazy"></div>
+          <figcaption class="card__cap"><span class="tag">UI·HUD 图标设计</span><h3>Disco Bingo · 加载与主界面</h3><p>DISCO BINGO · LOADING UI</p></figcaption>
+        </figure>
+
+        <figure class="card reveal" data-cat="ui" data-idx="4">
+          <div class="card__media"><img src="assets/covers/ui-megawheel.jpg" alt="Mega Wheel · 转盘主界面" loading="lazy"></div>
+          <figcaption class="card__cap"><span class="tag">UI·HUD 图标设计</span><h3>Mega Wheel · 转盘主界面</h3><p>MEGA WHEEL · VEGAS SPIN</p></figcaption>
+        </figure>
+
+        <figure class="card reveal" data-cat="ui" data-idx="5">
+          <div class="card__media"><img src="assets/covers/ui-bankheist.jpg" alt="Bank Heist · 主题界面" loading="lazy"></div>
+          <figcaption class="card__cap"><span class="tag">UI·HUD 图标设计</span><h3>Bank Heist · 主题界面</h3><p>BANK HEIST · SLOT UI</p></figcaption>
+        </figure>
+
+        <figure class="card reveal" data-cat="ui" data-idx="6">
+          <div class="card__media"><img src="assets/covers/ui-pirates.jpg" alt="Pirates Fortune · 主题界面" loading="lazy"></div>
+          <figcaption class="card__cap"><span class="tag">UI·HUD 图标设计</span><h3>Pirates Fortune · 主题界面</h3><p>PIRATES FORTUNE · SLOT UI</p></figcaption>
+        </figure>
+
+        <figure class="card reveal" data-cat="ui" data-idx="7">
+          <div class="card__media"><img src="assets/covers/ui-tigers.jpg" alt="Wild Tigers · 主题界面" loading="lazy"></div>
+          <figcaption class="card__cap"><span class="tag">UI·HUD 图标设计</span><h3>Wild Tigers · 主题界面</h3><p>WILD TIGERS · SLOT UI</p></figcaption>
+        </figure>
+
+        <figure class="card reveal" data-cat="ui" data-idx="8">
+          <div class="card__media"><img src="assets/covers/ui-gold.jpg" alt="Leprechaun's Gold · 主题界面" loading="lazy"></div>
+          <figcaption class="card__cap"><span class="tag">UI·HUD 图标设计</span><h3>Leprechaun's Gold · 主题界面</h3><p>LEPRECHAUN'S GOLD · SLOT UI</p></figcaption>
+        </figure>
+
+        <figure class="card reveal" data-cat="ui" data-idx="9">
+          <div class="card__media"><img src="assets/covers/ui-diamond.jpg" alt="Diamond Lounge · 主题界面" loading="lazy"></div>
+          <figcaption class="card__cap"><span class="tag">UI·HUD 图标设计</span><h3>Diamond Lounge · 主题界面</h3><p>DIAMOND LOUNGE · SLOT UI</p></figcaption>
+        </figure>
+
+        <figure class="card reveal" data-cat="ui" data-idx="10">
+          <div class="card__media"><img src="assets/covers/ui-savanna.jpg" alt="Savanna Cash · 主题界面" loading="lazy"></div>
+          <figcaption class="card__cap"><span class="tag">UI·HUD 图标设计</span><h3>Savanna Cash · 主题界面</h3><p>SAVANNA CASH · SLOT UI</p></figcaption>
+        </figure>
+
+        <figure class="card reveal" data-cat="ui" data-idx="11">
+          <div class="card__media"><img src="assets/covers/ui-icefire.jpg" alt="Ice and Fire · 角色界面" loading="lazy"></div>
+          <figcaption class="card__cap"><span class="tag">UI·HUD 图标设计</span><h3>Ice and Fire · 角色界面</h3><p>ICE AND FIRE · CHARACTERS</p></figcaption>
+        </figure>
+
+        <figure class="card reveal" data-cat="ui" data-idx="12">
+          <div class="card__media"><img src="assets/covers/ui-zorro.jpg" alt="Zorro · 主题界面" loading="lazy"></div>
+          <figcaption class="card__cap"><span class="tag">UI·HUD 图标设计</span><h3>Zorro · 主题界面</h3><p>ZORRO · SLOT UI</p></figcaption>
+        </figure>
+
+        <figure class="card reveal" data-cat="ui" data-idx="13">
+          <div class="card__media"><img src="assets/covers/ui-legendary.jpg" alt="Legendary Mark · 免费游戏" loading="lazy"></div>
+          <figcaption class="card__cap"><span class="tag">UI·HUD 图标设计</span><h3>Legendary Mark · 免费游戏</h3><p>LEGENDARY MARK · FREE GAMES</p></figcaption>
+        </figure>
+
+        <figure class="card reveal" data-cat="ui" data-idx="14">
+          <div class="card__media"><img src="assets/covers/ui-charge.jpg" alt="Charge Blue or Red · 功能界面" loading="lazy"></div>
+          <figcaption class="card__cap"><span class="tag">UI·HUD 图标设计</span><h3>Charge Blue or Red · 功能界面</h3><p>CHARGE BLUE OR RED · FEATURE</p></figcaption>
+        </figure>
+
+        <figure class="card reveal" data-cat="ui" data-idx="15">
+          <div class="card__media"><img src="assets/covers/ui-urban.jpg" alt="Urban Prediction · 功能界面" loading="lazy"></div>
+          <figcaption class="card__cap"><span class="tag">UI·HUD 图标设计</span><h3>Urban Prediction · 功能界面</h3><p>URBAN PREDICTION · FEATURE</p></figcaption>
+        </figure>
+
+        <figure class="card reveal" data-cat="ui" data-idx="16">
+          <div class="card__media"><img src="assets/covers/ui-wheelpay.jpg" alt="转盘付费 · 弹窗界面" loading="lazy"></div>
+          <figcaption class="card__cap"><span class="tag">UI·HUD 图标设计</span><h3>转盘付费 · 弹窗界面</h3><p>SPIN OFFER · POPUP UI</p></figcaption>
+        </figure>
+
+        <figure class="card reveal" data-cat="ui" data-idx="17">
+          <div class="card__media"><img src="assets/covers/ui-cardspec.jpg" alt="卡牌游戏 · 登录与规范" loading="lazy"></div>
+          <figcaption class="card__cap"><span class="tag">UI·HUD 图标设计</span><h3>卡牌游戏 · 登录与规范</h3><p>CARD GAME · LOGIN &amp; GUIDE</p></figcaption>
+        </figure>
+
+        <figure class="card reveal" data-cat="ui" data-idx="18">
+          <div class="card__media"><img src="assets/covers/ui-wulin.jpg" alt="武林豪侠传 · 登录界面" loading="lazy"></div>
+          <figcaption class="card__cap"><span class="tag">UI·HUD 图标设计</span><h3>武林豪侠传 · 登录界面</h3><p>WULIN LEGEND · LOGIN</p></figcaption>
+        </figure>
+
+        <figure class="card reveal" data-cat="ui" data-idx="19">
+          <div class="card__media"><img src="assets/covers/ui-qipai.jpg" alt="棋牌游戏 · 大厅界面" loading="lazy"></div>
+          <figcaption class="card__cap"><span class="tag">UI·HUD 图标设计</span><h3>棋牌游戏 · 大厅界面</h3><p>CHESS &amp; CARD · LOBBY</p></figcaption>
+        </figure>
+
+        <figure class="card reveal" data-cat="ui" data-idx="20">
+          <div class="card__media"><img src="assets/covers/ui-luckycards.jpg" alt="Lucky Cards · 收集玩法界面" loading="lazy"></div>
+          <figcaption class="card__cap"><span class="tag">UI·HUD 图标设计</span><h3>Lucky Cards · 收集玩法界面</h3><p>LUCKY CARDS · COLLECTION UI</p></figcaption>
+        </figure>
+
+        <figure class="card reveal" data-cat="ui" data-idx="21">
+          <div class="card__media"><img src="assets/covers/ui-cashfortune.jpg" alt="Cash Fortune · 界面设计展示" loading="lazy"></div>
+          <figcaption class="card__cap"><span class="tag">UI·HUD 图标设计</span><h3>Cash Fortune · 界面设计展示</h3><p>CASH FORTUNE · UI SHOWCASE</p></figcaption>
+        </figure>
+
+        <figure class="card reveal" data-cat="ui" data-idx="22">
+          <div class="card__media"><img src="assets/covers/ui-midas.jpg" alt="Midas Touch · 界面设计展示" loading="lazy"></div>
+          <figcaption class="card__cap"><span class="tag">UI·HUD 图标设计</span><h3>Midas Touch · 界面设计展示</h3><p>MIDAS TOUCH · UI SHOWCASE</p></figcaption>
+        </figure>
+
+        <figure class="card reveal" data-cat="ui" data-idx="23">
+          <div class="card__media"><img src="assets/covers/ui-slots-lobby.jpg" alt="Slots 大厅 · 加载与奖励动线" loading="lazy"></div>
+          <figcaption class="card__cap"><span class="tag">UI·HUD 图标设计</span><h3>Slots 大厅 · 加载与奖励动线</h3><p>SLOTS LOBBY · LOADING &amp; REWARDS</p></figcaption>
+        </figure>
+
+        <figure class="card reveal" data-cat="ui" data-idx="24">
+          <div class="card__media"><img src="assets/covers/ui-pachinko.jpg" alt="Pachinball Bonus · 弹珠玩法" loading="lazy"></div>
+          <figcaption class="card__cap"><span class="tag">UI·HUD 图标设计</span><h3>Pachinball Bonus · 弹珠玩法</h3><p>PACHINBALL BONUS · SLOTS GAME</p></figcaption>
+        </figure>
+
+        <figure class="card reveal" data-cat="ui" data-idx="25">
+          <div class="card__media"><img src="assets/covers/popup-zeus.jpg" alt="宙斯 Rising · 活动弹窗" loading="lazy"></div>
+          <figcaption class="card__cap"><span class="tag">UI·HUD 图标设计</span><h3>宙斯 Rising · 活动弹窗</h3><p>ZEUS RISING · EVENT POPUPS</p></figcaption>
+        </figure>
+
+        <figure class="card reveal" data-cat="ui" data-idx="26">
+          <div class="card__media"><img src="assets/works/popup-piggy/popup-piggy-1.jpg" alt="黑帮猪 · 活动弹窗" loading="lazy"></div>
+          <figcaption class="card__cap"><span class="tag">UI·HUD 图标设计</span><h3>黑帮猪 · 活动弹窗</h3><p>GANGSTA PIGS · EVENT POPUPS</p></figcaption>
+        </figure>
+
+        <figure class="card reveal" data-cat="ui" data-idx="27">
+          <div class="card__media"><img src="assets/works/popup-aladin/popup-aladin-1.jpg" alt="阿拉丁 · 功能弹窗" loading="lazy"></div>
+          <figcaption class="card__cap"><span class="tag">UI·HUD 图标设计</span><h3>阿拉丁 · 功能弹窗</h3><p>ALADIN · FEATURE POPUPS</p></figcaption>
+        </figure>
+
+        <figure class="card reveal" data-cat="ui" data-idx="28">
+          <div class="card__media"><img src="assets/works/popup-mystery/popup-mystery-1.jpg" alt="神秘奖励 · 功能弹窗" loading="lazy"></div>
+          <figcaption class="card__cap"><span class="tag">UI·HUD 图标设计</span><h3>神秘奖励 · 功能弹窗</h3><p>MYSTERY OFFER · POPUPS</p></figcaption>
+        </figure>
+
+        <figure class="card reveal" data-cat="ui" data-idx="29">
+          <div class="card__media"><img src="assets/covers/popup-win.jpg" alt="转盘与中奖弹窗 · 合集" loading="lazy"></div>
+          <figcaption class="card__cap"><span class="tag">UI·HUD 图标设计</span><h3>转盘与中奖弹窗 · 合集</h3><p>SPIN &amp; WIN · POPUP COLLECTION</p></figcaption>
+        </figure>
+
+        <figure class="card reveal" data-cat="ui" data-idx="30">
+          <div class="card__media"><img src="assets/covers/popup-lobby.jpg" alt="游戏大厅 · 活动弹窗" loading="lazy"></div>
+          <figcaption class="card__cap"><span class="tag">UI·HUD 图标设计</span><h3>游戏大厅 · 活动弹窗</h3><p>LOBBY EVENTS · POPUPS</p></figcaption>
+        </figure>
+
+        <figure class="card reveal" data-cat="kv" data-idx="31">
+          <div class="card__media"><img src="assets/covers/kv-dynasty.jpg" alt="君临天下 · 宣传 Banner" loading="lazy"></div>
+          <figcaption class="card__cap"><span class="tag">宣传主视觉</span><h3>君临天下 · 宣传 Banner</h3><p>DIVINITY WAR · PROMO BANNERS</p></figcaption>
+        </figure>
+
+        <figure class="card reveal" data-cat="kv" data-idx="32">
+          <div class="card__media"><img src="assets/covers/kv-casino.jpg" alt="Casino 促销活动 Banner" loading="lazy"></div>
+          <figcaption class="card__cap"><span class="tag">宣传主视觉</span><h3>Casino 促销活动 Banner</h3><p>CASINO PROMO · EVENT BANNERS</p></figcaption>
+        </figure>
+
+        <figure class="card reveal" data-cat="kv" data-idx="33">
+          <div class="card__media"><img src="assets/works/kv-major-suitcase/kv-major-suitcase-1.jpg" alt="Major Suitcase · 活动弹窗物料" loading="lazy"></div>
+          <figcaption class="card__cap"><span class="tag">宣传主视觉</span><h3>Major Suitcase · 活动弹窗物料</h3><p>MAJOR SUITCASE · EVENT POPUP</p></figcaption>
+        </figure>
+
+        <figure class="card reveal" data-cat="kv" data-idx="34">
+          <div class="card__media"><img src="assets/works/kv-explosive-deal/kv-explosive-deal-1.jpg" alt="Explosive Deal · 投放素材" loading="lazy"></div>
+          <figcaption class="card__cap"><span class="tag">宣传主视觉</span><h3>Explosive Deal · 投放素材</h3><p>EXPLOSIVE DEAL · AD CREATIVE</p></figcaption>
+        </figure>
+
+        <figure class="card reveal" data-cat="kv" data-idx="35">
+          <div class="card__media"><img src="assets/works/kv-special-offer/kv-special-offer-1.jpg" alt="Special Offer · 投放素材" loading="lazy"></div>
+          <figcaption class="card__cap"><span class="tag">宣传主视觉</span><h3>Special Offer · 投放素材</h3><p>SPECIAL OFFER · AD CREATIVE</p></figcaption>
+        </figure>
+
+        <figure class="card reveal" data-cat="kv" data-idx="36">
+          <div class="card__media"><img src="assets/works/kv-mockup-slots/kv-mockup-slots-1.jpg" alt="Slots 多端展示 · Cash Party" loading="lazy"></div>
+          <figcaption class="card__cap"><span class="tag">宣传主视觉</span><h3>Slots 多端展示 · Cash Party</h3><p>SLOTS MULTI-DEVICE · CASH PARTY</p></figcaption>
+        </figure>
+
+        <figure class="card reveal" data-cat="kv" data-idx="37">
+          <div class="card__media"><img src="assets/works/kv-mockup-midas/kv-mockup-midas-1.jpg" alt="Slots 多端展示 · Midas Touch" loading="lazy"></div>
+          <figcaption class="card__cap"><span class="tag">宣传主视觉</span><h3>Slots 多端展示 · Midas Touch</h3><p>SLOTS MULTI-DEVICE · MIDAS TOUCH</p></figcaption>
+        </figure>
+
+        <figure class="card reveal" data-cat="logo" data-idx="38">
+          <div class="card__media"><img src="assets/covers/logo-sheets.jpg" alt="游戏 LOGO 字体设计" loading="lazy"></div>
+          <figcaption class="card__cap"><span class="tag">LOGO 设计</span><h3>游戏 LOGO 字体设计</h3><p>GAME LOGO · LETTERING</p></figcaption>
+        </figure>
+
+        <figure class="card reveal" data-cat="logo" data-idx="39">
+          <div class="card__media"><img src="assets/covers/logo-mockup.jpg" alt="游戏 LOGO · 应用展示" loading="lazy"></div>
+          <figcaption class="card__cap"><span class="tag">LOGO 设计</span><h3>游戏 LOGO · 应用展示</h3><p>GAME LOGOS · IN-APP</p></figcaption>
+        </figure>
+
+        <figure class="card reveal" data-cat="logo" data-idx="40">
+          <div class="card__media"><img src="assets/works/logo-9500/logo-9500-1.jpg" alt="9500 · The Beasts 标识" loading="lazy"></div>
+          <figcaption class="card__cap"><span class="tag">LOGO 设计</span><h3>9500 · The Beasts 标识</h3><p>9500 · THE BEASTS</p></figcaption>
+        </figure>
+
+        <figure class="card reveal" data-cat="logo" data-idx="41">
+          <div class="card__media"><img src="assets/covers/logo-showcase.jpg" alt="游戏 LOGO · 精选展示" loading="lazy"></div>
+          <figcaption class="card__cap"><span class="tag">LOGO 设计</span><h3>游戏 LOGO · 精选展示</h3><p>GAME LOGO · SELECTED SHOWCASE</p></figcaption>
+        </figure>
+
+      </div>
+
+      <p class="works__note reveal">※ 以上为精选项目 —— 完整作品集与项目细节欢迎联系我获取。</p>
+    </div>
+  </section>
+
+  <!-- ======================= 能力 ======================= -->
+  <section class="section section--alt" id="skills">
+    <div class="container">
+      <header class="section__head reveal">
+        <p class="kicker">CAPABILITIES</p>
+        <h2>能力矩阵</h2>
+        <p class="section__sub">主美不只是画得好，更是让整个团队的产出站得稳。</p>
+      </header>
+      <div class="skills">
+        <article class="skill reveal">
+          <div class="skill__ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3 L21 8 L12 13 L3 8 Z M5.5 11v4.5c0 1.5 3 3 6.5 3s6.5-1.5 6.5-3V11" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
+          <h3>世界观视觉定义</h3><p>从文字设定到视觉圣经：基调板、色彩体系、剪影语言与材质规范，一页对齐全组。</p>
+          <div class="bar" data-level="95"><i></i></div>
+        </article>
+        <article class="skill reveal" data-delay="1">
+          <div class="skill__ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="7" r="3.4" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M5 20c0-3.6 3.1-6 7-6s7 2.4 7 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+          <h3>角色概念设计</h3><p>主角 / NPC / Boss 全梯度：剪影探索、三视图、材质拆分与表情包交付标准。</p>
+          <div class="bar" data-level="92"><i></i></div>
+        </article>
+        <article class="skill reveal" data-delay="2">
+          <div class="skill__ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 18 L9 9 L13 14 L16.5 10 L21 18 Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="17" cy="6.5" r="1.8" fill="currentColor"/></svg></div>
+          <h3>场景氛围概念</h3><p>关键帧、光色分级、Matte Painting 与关卡情绪节奏，让场景自己讲故事。</p>
+          <div class="bar" data-level="88"><i></i></div>
+        </article>
+        <article class="skill reveal" data-delay="3">
+          <div class="skill__ico" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="13" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+          <h3>UI / HUD 设计</h3><p>信息层级优先的界面体系：战斗 HUD、图鉴背包、可读性与风格化装饰的平衡。</p>
+          <div class="bar" data-level="84"><i></i></div>
+        </article>
+        <article class="skill reveal" data-delay="4">
+          <div class="skill__ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2 L14.2 9.8 L22 12 L14.2 14.2 L12 22 L9.8 14.2 L2 12 L9.8 9.8 Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
+          <h3>图标与宣传主视觉</h3><p>道具 / 装备图标体系化设计，赛季 KV 与版本主视觉，从草图到终稿的完整交付。</p>
+          <div class="bar" data-level="86"><i></i></div>
+        </article>
+        <article class="skill reveal" data-delay="5">
+          <div class="skill__ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="8" cy="8" r="2.6" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="16.5" cy="10" r="2.2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M3 19c0-2.8 2.2-4.6 5-4.6s5 1.8 5 4.6M14 18.5c.3-2.2 1.9-3.5 4-3.5 1.7 0 3 .9 3 2.6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+          <h3>管线与团队管理</h3><p>评审机制、外包验收标准、产能排期与新人培养，12 人团队高效运转。</p>
+          <div class="bar" data-level="90"><i></i></div>
+        </article>
+      </div>
+      <div class="tools reveal">
+        <span class="tools__label">日常工具链</span>
+        <ul>
+          <li>Photoshop</li><li>Blender</li><li>ZBrush</li><li>Substance Painter</li><li>Unreal Engine 5</li><li>Unity</li><li>After Effects</li><li>Figma</li><li>PureRef</li><li>Marmoset</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= 管线 ======================= -->
+  <section class="section" id="pipeline">
+    <div class="container">
+      <header class="section__head reveal">
+        <p class="kicker">ART PIPELINE</p>
+        <h2>美术管线</h2>
+        <p class="section__sub">一套让「灵感」稳定变成「上线品质」的工作流。</p>
+      </header>
+      <ol class="steps">
+        <li class="step reveal"><span class="step__no">01</span><h3>世界观对齐</h3><p>与策划/文案共同确认基调，产出情绪板与视觉关键词。</p></li>
+        <li class="step reveal" data-delay="1"><span class="step__no">02</span><h3>概念探索</h3><p>小图快速发散剪影与色彩方向，锁定 2-3 个候选。</p></li>
+        <li class="step reveal" data-delay="2"><span class="step__no">03</span><h3>关键帧定稿</h3><p>细化关键概念图，确定光色、材质与叙事细节。</p></li>
+        <li class="step reveal" data-delay="3"><span class="step__no">04</span><h3>规范交付</h3><p>三视图 / 拆件 / 色板标注，形成可直接执行的规范文档。</p></li>
+        <li class="step reveal" data-delay="4"><span class="step__no">05</span><h3>引擎验证</h3><p>引擎内打光与校色，回收美术资产在真实镜头下的表现。</p></li>
+        <li class="step reveal" data-delay="5"><span class="step__no">06</span><h3>打磨验收</h3><p>按验收清单逐项过审，沉淀进团队视觉资产库。</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ======================= 经历 ======================= -->
+  <section class="section section--alt" id="experience">
+    <div class="container">
+      <header class="section__head reveal">
+        <p class="kicker">EXPERIENCE</p>
+        <h2>项目经历</h2>
+      </header>
+      <div class="timeline">
+        <article class="tl reveal">
+          <div class="tl__time">2026 — 至今</div>
+          <div class="tl__body">
+            <h3>新产品 · 项目美术负责人</h3>
+            <p class="tl__proj">公司首款 AI 研发产品 · Godot 4 引擎</p>
+            <p>从 0 到 1 定调「写实 Q 版」视觉基准，基于 Godot 4 搭建内部美术生产管线；主导 ComfyUI 节点化工作流与 LoRA 风格化链路，把 AI 出图从「抽卡」变成可控输出，2 周产出原需 6 周的候选方案，早期风格探索成本压缩约 70%。</p>
+          </div>
+        </article>
+        <article class="tl reveal" data-delay="1">
+          <div class="tl__time">2022 — 至今</div>
+          <div class="tl__body">
+            <h3>Slots Casino - Fortune Win · UI 核心负责人</h3>
+            <p class="tl__proj">公司旗舰级高品质新品</p>
+            <p>被抽调进公司级精英团队，全程参与从 0 到 1 研发；负责全部 UI 模块的视觉设计与落地，建立完整的 UI 视觉规范与交互标准，并与角色、场景、特效模块统一视觉语言。</p>
+          </div>
+        </article>
+        <article class="tl reveal" data-delay="2">
+          <div class="tl__time">2021.05 — 至今</div>
+          <div class="tl__body">
+            <h3>武汉蜂鸟于飞科技 · 美术负责人</h3>
+            <p class="tl__proj">Cash Mania / Luckymia · UI 部门组长</p>
+            <p>负责武汉 UI 部门的招聘、梯队建设与绩效管理；主导公司级 UI 规范与美术验收标准，统筹 Cash Mania、Slots Casino、Double Win 等多项目资源调度；引入 AI 辅助美术工作流，前期设计产出效率提升约 50%。</p>
+          </div>
+        </article>
+        <article class="tl reveal" data-delay="3">
+          <div class="tl__time">2020.04 — 2021.05</div>
+          <div class="tl__body">
+            <h3>武汉镜象科技 · 游戏主 UI</h3>
+            <p class="tl__proj">Cash party</p>
+            <p>负责整体 UI 风格设定与规范搭建，统筹大厅、主界面、弹窗与活动页；把关配色、版式、质感与动效节奏。项目较同类老项目提前 4 个月上线，次日留存 45%、月留存 12%。</p>
+          </div>
+        </article>
+        <article class="tl reveal" data-delay="4">
+          <div class="tl__time">2017.05 — 2020.01</div>
+          <div class="tl__body">
+            <h3>武汉黑虫网络 · 高级 UI 设计师</h3>
+            <p class="tl__proj">多款手游界面与图标系统</p>
+            <p>参与项目立项讨论，负责游戏界面、二级弹窗、游戏 icon、胜利与规则界面；与策划、程序、特效对接优化资源，输出规范化的美术资源。</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= 关于 ======================= -->
+  <section class="section" id="about">
+    <div class="container about">
+      <div class="about__pic reveal">
+        <img src="assets/art/portrait.jpg" alt="Mark Chen — 游戏美术负责人" width="900" height="900" loading="lazy" decoding="async">
+        <span class="about__badge" aria-hidden="true"></span>
+      </div>
+      <div class="about__txt">
+        <header class="section__head section__head--left reveal">
+          <p class="kicker">ABOUT ME</p>
+          <h2>关于我</h2>
+        </header>
+        <p class="reveal">我是 Mark Chen，游戏美术十二年，其中六年带团队。从 UI 设计执行一路做到美术负责人，既做过从 0 到 1 的新品风格预研，也长期负责存量项目的视觉升级与规范治理。</p>
+        <p class="reveal" data-delay="1">我的日常是两条线并行：一条是<strong>定标准</strong>——UI 视觉规范、命名与切图规范、美术验收标准，让多个项目产出统一；另一条是<strong>搭管线</strong>——把 AI 真正接进生产流程，用 ComfyUI 节点化工作流把「抽卡式出图」变成可控输出，前期设计产出效率提升约 50%。</p>
+        <p class="reveal" data-delay="2">我习惯把<strong>美术品质和商业化放在一起看</strong>：界面要好看，也要让玩家看得懂、让转化路径顺畅。合作上前置对齐策划与程序，把返工压到最低。</p>
+        <ul class="about__facts reveal" data-delay="3">
+          <li><span>坐标</span>武汉 · 可远程 / 可出差</li>
+          <li><span>状态</span>考虑新机会 · 月内到岗</li>
+          <li><span>方向</span>主美 / 美术负责人 / AI × 游戏美术管线</li>
+        </ul>
+        <div class="about__cta reveal" data-delay="4">
+          <a class="btn btn--solid" href="#contact">获取完整简历</a>
+          <a class="btn btn--ghost" href="#works">再看一遍作品</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= 联系 ======================= -->
+  <section class="section section--contact" id="contact">
+    <div class="container contact">
+      <p class="kicker reveal">GET IN TOUCH</p>
+      <h2 class="contact__title reveal" data-delay="1">Got a project in mind?</h2>
+      <p class="contact__sub reveal" data-delay="2">Full-time roles, project collaborations or outsourcing reviews — email me and I'll get back to you within 48 hours.</p>
+      <div class="contact__row reveal" data-delay="3">
+        <a class="btn btn--solid btn--lg" href="mailto:zerogalpha92@gmail.com?subject=Project%20inquiry">zerogalpha92@gmail.com</a>
+        <div class="contact__links">
+          <a href="https://www.behance.net/alphazerog" target="_blank" rel="noopener noreferrer">Behance</a>
+          <a href="https://www.pinterest.com/alphazerog/_boards/" target="_blank" rel="noopener noreferrer">Pinterest</a>
+          <a href="https://www.facebook.com/zerogalpha92" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="mailto:zerogalpha92@gmail.com">Gmail</a>
+          <button type="button" data-copy="13260526229" title="Click to copy WeChat ID">WeChat 13260526229</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__in">
+    <p>© <span id="year">2026</span> Mark Chen · Game Art Portfolio</p>
+    <p class="footer__note">All artwork © Mark Chen. Please do not reproduce or repost without permission.</p>
+    <a class="footer__top" href="#top" aria-label="Back to top">Back to top ↑</a>
+  </div>
+</footer>
+
+<!-- ======================= 灯箱（站酷式：封面 + 图集） ======================= -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="作品详情" hidden>
+  <div class="lightbox__backdrop" data-close></div>
+  <figure class="lightbox__box">
+    <button class="lightbox__close" data-close aria-label="关闭">✕</button>
+    <div class="lightbox__viewer">
+      <div class="lightbox__stage">
+        <div class="lightbox__scroll"><img id="lbImg" src="" alt=""></div>
+        <i class="lightbox__shield" aria-hidden="true"></i>
+        <span class="lightbox__mark" id="lbMark" aria-hidden="true">© Mark Chen · alphazerog</span>
+        <span class="lightbox__count" id="lbCount"></span>
+        <span class="lightbox__hint" id="lbHint">点击图片放大查看</span>
+        <button class="lightbox__nav lightbox__nav--prev" data-gprev aria-label="上一张图">‹</button>
+        <button class="lightbox__nav lightbox__nav--next" data-gnext aria-label="下一张图">›</button>
+      </div>
+      <div class="lightbox__thumbs" id="lbThumbs" aria-label="图集缩略图"></div>
+    </div>
+    <figcaption class="lightbox__cap">
+      <div class="lightbox__meta">
+        <span class="tag" id="lbTag"></span>
+        <h3 id="lbTitle"></h3>
+        <p id="lbEn"></p>
+      </div>
+      <p class="lightbox__desc" id="lbDesc"></p>
+      <div class="lightbox__facts"><span id="lbYear"></span><span id="lbRole"></span><span id="lbTool"></span></div>
+      <div class="lightbox__worknav">
+        <button data-wprev>‹ 上一作品</button>
+        <button data-wnext>下一作品 ›</button>
+      </div>
+    </figcaption>
+  </figure>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
